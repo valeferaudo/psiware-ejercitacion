@@ -69,3 +69,17 @@ for (let i = 0; i < multiArr.length; i++) {
 }
 console.log(`El número mas grande es: ${maxNumber} y se encuentra en la: ${maxKey}`);
 
+// b - Ordenar los elementos dentro de cada Key
+
+// Lo vuelvo a definir porque no pude clonar el arreglo
+let sortedMultiArray = [
+    ["Key 1", [1,4,5]],
+    ["Key 2", [4,10,3]],
+    ["Key 3", [8,2,6]],
+];
+for (let i = 0; i < sortedMultiArray.length; i++) {
+    sortedMultiArray[i][1].sort((a,b) => a - b);
+}
+console.log(`El arreglo ordenado de menor a mayor es: `,sortedMultiArray);
+
+
