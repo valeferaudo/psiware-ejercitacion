@@ -89,3 +89,34 @@ let sortedMultiArrayOther = [...multiArr];
 let total = 0;
 sortedMultiArrayOther = sortedMultiArrayOther.sort((a,b) => sum(b[1]) - sum (a[1]));
 console.log("Orden por pesos de key: ",sortedMultiArrayOther);
+
+// d - Determinar cuales son pares y crear una nueva "Key" con los valores pares (repetidos)
+let newKeyNumbers = [];
+for (let i = 0; i < multiArr.length; i++) {
+    multiArr[i][1].forEach(item => {
+        if(item % 2 === 0){
+            newKeyNumbers.push(item);
+        }
+    })
+}
+multiArr.push(['Key 4',newKeyNumbers]);
+console.log(`El nuevo arreglo con una nueva Key con los pares repetidos es: `,multiArr)
+
+// d.1 - Determinar cuales son pares y crear una nueva "Key" con los valores pares (sin repetir)
+multiArr = [
+    ["Key 1", [1,4,5]],
+    ["Key 2", [4,10,3]],
+    ["Key 3", [8,2,6]],
+];
+let newKeyNumbers2 = [];
+for (let i = 0; i < multiArr.length; i++) {
+    multiArr[i][1].forEach(item => {
+        if(item % 2 === 0){
+            if(newKeyNumbers2.indexOf(item) === -1){
+                newKeyNumbers2.push(item);
+            }
+        }
+    })
+}
+multiArr.push(['Key 4',newKeyNumbers2]);
+console.log(`El nuevo arreglo con una nueva Key con los pares no repetidos es: `,multiArr)
