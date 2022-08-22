@@ -1,0 +1,9 @@
+insert into autos (id,marca,patente,modelo,precio,seguro) values (1, 'Peugeot','AA520LF',2019,35448.38,true);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (2, 'Peugeot','AF180LH',2022,444458.00,true);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (3, 'Peugeot','AZ120LF',2010,123448.38,false);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (4, 'Ford','BZ111LF',2018,456448.38,false);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (5, 'Ford','RF222LF',2019,789448.38,true);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (6, 'Ford','LO333LF',2020,852448.38,false);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (7, 'Chevrolet','KA520LF',2010,354428.38,true);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (8, 'JEEP','LA120LW',2012,354428.38,true);
+insert into autos (id,marca,patente,modelo,precio,seguro) values (9, 'JEEP','JO888SE',2021,852448.38,false);
