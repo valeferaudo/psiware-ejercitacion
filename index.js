@@ -12,4 +12,12 @@ for (let index = 0; index < arr.length; index++) {
         position = index;
     }
 }
-console.log(`El mayor número es el: ${max} y se encuentra en la posición: ${position} del arreglo`);
+console.log(`El mayor número es el: ${max} y se encuentra en la posición: ${position} del arreglo: `, arr);
+
+// b - Utilizando al menos una función/método
+console.log(`El mayor número es el: ${Math.max(...arr)} y se encuentra en la posición: ${arr.indexOf(Math.max(...arr))} del arreglo: `, arr);
+
+// 2- Ordenar la lista
+let sortedArray = [...arr];
+sortedArray = sortedArray.sort((a,b) => a - b);
+console.log(`El arreglo `,arr, ` ordenado de menor a mayor es: `,sortedArray);
