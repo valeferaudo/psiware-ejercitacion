@@ -48,3 +48,24 @@ for (let index = 0; index < arr.length; index++) {
     }
 }
 console.log(`Los números pares son: `, newPares);
+
+// Ejercicio 2: Algoritmos II
+let multiArr = [
+    ["Key 1", [1,4,5]],
+    ["Key 2", [4,10,3]],
+    ["Key 3", [8,2,6]],
+];
+
+// a - Determinar cual es el número mayor y en que "Key" se encuentra
+let maxKey = null;
+let maxNumber = 0;
+for (let i = 0; i < multiArr.length; i++) {
+    multiArr[i][1].forEach(item => {
+        if(maxNumber < item){
+            maxNumber = item;
+            maxKey = multiArr[i][0];
+        }
+    })
+}
+console.log(`El número mas grande es: ${maxNumber} y se encuentra en la: ${maxKey}`);
+
