@@ -39,3 +39,12 @@ for (let index = 0; index < arr.length; index++) {
         console.log(`El número: ${arr[index]} es par y se encuentra en la posición: ${index}`)
     }
 }
+
+// b - Crear un nuevo arreglo con los número pares únicamente
+let newPares = [];
+for (let index = 0; index < arr.length; index++) {
+    if(arr[index] % 2 === 0){
+        newPares.push(arr[index]);
+    }
+}
+console.log(`Los números pares son: `, newPares);
