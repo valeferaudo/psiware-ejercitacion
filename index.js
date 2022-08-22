@@ -21,3 +21,21 @@ console.log(`El mayor número es el: ${Math.max(...arr)} y se encuentra en la po
 let sortedArray = [...arr];
 sortedArray = sortedArray.sort((a,b) => a - b);
 console.log(`El arreglo `,arr, ` ordenado de menor a mayor es: `,sortedArray);
+
+// a - Determinar cuales son pares y en qué posición se encuentran
+let pares = [];
+let indexes = [];
+for (let index = 0; index < arr.length; index++) {
+    if(arr[index] % 2 === 0){
+        pares.push(arr[index]);
+        indexes.push(index);
+    }
+}
+console.log(`Los números pares son:${pares} y se encuentran en las posiciones: ${indexes} respectivamente.`);
+
+// Otra forma sin utilizar variables.
+for (let index = 0; index < arr.length; index++) {
+    if(arr[index] % 2 === 0){
+        console.log(`El número: ${arr[index]} es par y se encuentra en la posición: ${index}`)
+    }
+}
