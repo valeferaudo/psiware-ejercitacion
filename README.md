@@ -12,4 +12,4 @@ El archivo index.js contiene la logica solicitada en Ejercicios 1 y 2.\
 El archivo "create_BD.sql" es el script para crear la BD.\
 El archivo "popular_BD.sql" es el script para llenar/popular la BD.\
 El archivo "consultas.sql" es el script de las consultas solicitadas.\
-El archivo "modelo_datos.jpeg" es el modelo de datos resultante.\
+El archivo "modelo_datos.jpeg" es el modelo de datos resultante.
