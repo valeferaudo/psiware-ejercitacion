@@ -92,6 +92,7 @@ console.log("Orden por pesos de key: ",sortedMultiArrayOther);
 
 // d - Determinar cuales son pares y crear una nueva "Key" con los valores pares (repetidos)
 let newKeyNumbers = [];
+let multiArrCopy = [...multiArr];
 for (let i = 0; i < multiArr.length; i++) {
     multiArr[i][1].forEach(item => {
         if(item % 2 === 0){
@@ -99,16 +100,12 @@ for (let i = 0; i < multiArr.length; i++) {
         }
     })
 }
-multiArr.push(['Key 4',newKeyNumbers]);
-console.log(`El nuevo arreglo con una nueva Key con los pares repetidos es: `,multiArr)
+multiArrCopy.push(['Key 4',newKeyNumbers]);
+console.log(`El nuevo arreglo con una nueva Key con los pares repetidos es: `,multiArrCopy)
 
 // d.1 - Determinar cuales son pares y crear una nueva "Key" con los valores pares (sin repetir)
-multiArr = [
-    ["Key 1", [1,4,5]],
-    ["Key 2", [4,10,3]],
-    ["Key 3", [8,2,6]],
-];
 let newKeyNumbers2 = [];
+let multiArrCopy2 = [...multiArr];
 for (let i = 0; i < multiArr.length; i++) {
     multiArr[i][1].forEach(item => {
         if(item % 2 === 0){
@@ -118,5 +115,5 @@ for (let i = 0; i < multiArr.length; i++) {
         }
     })
 }
-multiArr.push(['Key 4',newKeyNumbers2]);
-console.log(`El nuevo arreglo con una nueva Key con los pares no repetidos es: `,multiArr)
+multiArrCopy2.push(['Key 4',newKeyNumbers2]);
+console.log(`El nuevo arreglo con una nueva Key con los pares no repetidos es: `,multiArrCopy2)
